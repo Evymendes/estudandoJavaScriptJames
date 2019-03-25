@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aulas de Java</title>
+	<script type="text/javascript"></script>
+	<script src="scripts.js"></script>
+</head>
+<body>
+
+<div id="paragraf">
+
+<!-- 	Dicas para o desafio 1:
+
+1 - selecione com document.querySelector()
+ o elemento do documento que tem o texto e 
+ coloque o conteúdo dele em uma variável usando
+  o atributo objElemento.innerHTML;
+
+2 - use a função variavelString.split() para
+ transformar o texto em um array de palavras;
+
+3 - use a função array.forEach() [ou qualquer
+ outra estrutura de repetição] para percorrer
+  pelos itens de um array;
+
+4 - use variavelString.replace() ou variavelString.
+substr() para retirar os ponto e as virgulas que aparecerão
+ no final de algumas palavras (itens do array);
+
+5 - use variavelArray.filter() duas vezes ou use variavelArray.
+forEach() combinado com uma estrutura de decisão (if) para separar
+ as palavras maiores das palavras menores em 2 arrays diferentes;
+
+6 - use operadores relacionais para fazer testes lógicos;
+
+7 - use document.createElement() para criar novos elementos 
+HTML e objElementoPai.appendChild(objElementoFilho) para inserir
+ elementos no documento; -->
+
+<p id="desafio1">JavaScript é uma linguagem de programação interpretada. Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem com o usuário sem a necessidade deste script passar pelo servidor, controlando o navegador , realizando comunicação assíncrona e alterando o conteúdo do documento exibido.</p>
+	<h1 id="teste">Java é difícil, JavaScript é mais ou menos</h1>
+	<h1 id="res">vdd</h1>
+	
+	
+	<h1 id="titulo">Java</h1>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<img src="peixe.jpg" alt="peixinho" id="img"> <br />
+	<input id="trocar" type="button" value="troca" onClick="apertou" />
+</div>
+
+</body>
+</html>
+
+
+
+	<script>
+
+		/*var primeiro = document.querySelector('#paragraf p')
+		var tile = document.querySelector('#titulo')
+		console.log(primeiro)
+		var imagem = document.querySelector('img');
+		console.log(imagem)
+		var botao = document.querySelector('#trocar');
+		botao.addEventListener('click', apertou);
+		function apertou() {
+			imagem.src = 'dois.jpeg';
+		}*/
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aulas de Java</title>
+	<script type="text/javascript"></script>
+	<script src="scripts.js"></script>
+</head>
+<body>
+<div>
+	<h1 style="color: red">Visualizar através do console </h1>
+	<h2 style="color: red">(-inspesionar -console)</h2>
+	<article id="post">
+		<p>/*aprender a:      (03/Agosto)<br/>
+** 1 Selecionar elementos HTML;  <br/>
+** 2 Modificar elementos HTML <br/>
+** 2.1 Modificar o conteúdo de um elemento  <br/>
+** HTML selecionado; <br/>
+** 2.2 Modificar atributos de um  <br/>
+** elemento HTML selecionado; <br/>
+** 2.3 Modificar atributos de estilo  <br/>
+** de um elemento HTML selecionado; <br/>
+** 3 Executar código javascript quando <br/>
+** o usuário realizar uma determinada ação. <br/>
+**</p>
+		<h1 id="title">JavaScript</h1>
+		<p id='part1'>
+			javaScript é uma linguegem de programação blablablablabla
+		</p>
+		<img src="peixe.jpg" alt="peixinho"> <br />
+		<input id="trocar-imagem" type="button" value="Trocar Imagem" />
+		<p id='part2'>
+			kkkkkk
+		</p>	
+	</article>
+</div>
+
+<div>
+	<p>--------------------------------------------------------</p>
+	<h1>Calculadora         (07/Agosto) </h1>
+    <input type="text" id="display">
+    <br/><br/>
+    <input type="button" value="7" id="_7"/>
+    <input type="button" value="8" id="_8"/>
+    <input type="button" value="9" id="_9"/>
+    <input type="button" value="/" id="_divisao"/>
+    <br/>
+    <input type="button" value="4" id="_4"/>
+    <input type="button" value="5" id="_5"/>
+    <input type="button" value="6" id="_6"/>
+    <input type="button" value="*" id="_multiplicacao"/>
+    <br/>
+    <input type="button" value="1" id="_1"/>
+    <input type="button" value="2" id="_2"/>
+    <input type="button" value="3" id="_3"/>
+    <input type="button" value="-" id="_subtracao"/>
+    <br/>
+    <input type="button" value="0" id="_0"/>
+    <input type="button" value="&#8592;" id="_apagar"/>
+    <input type="button" value="=" id="_igual"/>
+    <input type="button" value="+" id="_adicao"/>
+    <p>--------------------------------------------------------</p>
+</div>
+<div>
+	<h1>Pelo console ver se é impar ou par</h1>
+	<p>var n1 = 122, n2 = 13; <br />
+			var soma = n1 + n2; <br />
+			console.log(soma); <br /> <br />
+
+			var nome = "Evelyn"; <br />
+			var sobrenome = "Mendes"; <br />
+			console.log(nome + ' ' + sobrenome); <br /> <br />
+
+			var numero = 1000; <br /> 
+			var resto0 = (numero % 3) == 0 ? "número par" : "número impar"; <br />
+			console.log(resto0); <br /> <br />
+
+			var numero2 = 3; <br />
+			numeroPrimo = true; <br />
+			for (i = 2; i < numero2; i++){ <br />
+				console.log(i); <br />
+				if ((numero2 % i ) == 0){ <br />
+					numeroPrimo = false; <br />
+				break; <br />
+				} <br />
+			} <br />
+			console.log(numeroPrimo); <br />
+	<p>--------------------------------------------------------</p>
+</div>
+<div>
+<h1>Maipulação de Strings           (09/Agosto) </h1>
+	<p>/*aprender a: <br/>
+** 1 Tamanho da string: length  <br/>
+** 2 Acessar caractere: charAt() <br/>
+** 3 Concatenar strings: concat()  <br/>
+** 4  Acessar indice: indexOf()<br/>
+** 5 Trocar palavra: replace()  <br/>
+** 6 extrair uma substring em determinada posição: slice() <br/>
+** 7 Inserir ou trocar uma substring: split()  <br/>
+** 8 Converter em caracteres minusculos: toLowerCase() <br/>
+** 9 Converter em caracteres maiusculo: toUpperCase() <br/>
+
+	<h5 id="frase">Estudando JavaScript vale apena!</h5>
+	<p id="resposta">SIMMMM!!!</p>
+	<p>--------------------------------------------------------</p>
+</div>
+<div>
+	<h1>Maipulação de Array </h1>
+	<p>/*aprender a: <br/>
+** 1 Como criar um array  <br/>
+** 2 Como adicionar um novo elemento em um array: push() unshift(); <br/>
+** 3 Como excluir um elemento do array: pop() e shift();  <br/>
+** 4 Como modificar um conteúdo de uma posição específica;<br/>
+** 5 Como adicionar elementos em posições arbtrarias: splice(2, 0, "lemon", "Kiwi" ) <br/>
+** 6 Tirar um pedaço de um array: slice() <br/>
+** 7 unir arrays: concat();  <br/>
+** 8 Como ordenar um array: sort(); <br/>
+** 9 Como converter um array em uma string e vice-versa: join(); <br/>
+  10 Apagando um elemento: operador delete;
+  11 Como consultar um tamanho de um array. length
+	<p>--------------------------------------------------------</p>
+</div>
+<div>
+	<h2>Mexendo com objeto</h2>
+	<p>script linha 303 (console.log)</p>
+	<p>--------------------------------------------------------</p>
+</div>
+</body>
+</html>
+
+
+
+	<script>
+		/*vamos aprender a: 
+1 Selecionar elementos HTML; 
+2 Modificar elementos HTML
+2.1 Modificar o conteúdo de um elemento 
+HTML selecionado;
+2.2 Modificar atributos de um 
+elemento HTML selecionado;
+2.3 Modificar atributos de estilo 
+de um elemento HTML selecionado;
+3 Executar código javascript quando
+o usuário realizar uma determinada ação.
+
+
+*/
+		// 1 Selecionar elementos HTML;
+// 			var article = document.querySelector('#post');
+// 			var article2 = document.querySelector('#post p');
+// 			var title = document.querySelector('#title');
+// 			console.log(title);
+
+// 			var paragrafo = document.querySelector('#part1');
+// 			console.log(paragrafo.innerHTML);
+
+// 		// modificar o conteúdo do elemento HTML selecionado
+// 			title.innerHTML = 'title.innerHTML';
+// 			console.log(title);
+// 			paragrafo.innerHTML = 'Lorem Ipson';
+// 			paragrafo.style.color = "red";
+// 		// modificar o atributo de um elemento HTML selecionado
+// 		//2 Selecionar elementos HTML
+// 			var imagem = document.querySelector('img'); // pegar 1
+// 			console.log(imagem);
+// 			//var imagens = document.querySelectorAll('img'); //pegar todas lista
+		
+// 		// imagem.style.width = 400;
+			
+
+// 			imagem.style.width = '500px';
+// 			console.log(imagem);
+
+// 			//imagem.src = "dois.jpeg";
+
+
+// 		//Selecionar elementos HTML; 
+// 			var paragrafo = document.querySelector('#part2'); 
+// 			paragrafo.innerHTML = "alterando texto através de java";
+
+// 			paragrafo.style.color = 'red';
+// 			console.log(paragrafo.innerHTML);
+// 			console.log(paragrafo);
+// 		//Trocar imagem
+// 			var botao = document.querySelector('#trocar-imagem');
+// 			console.log(botao);
+// 			 function trocarImagem(){
+// 					imagem.src = "dois.jpeg";
+// 				}
+// 			botao.addEventListener('click', trocarImagem);
+// // termino primeira aula
+
+
+// 			/* Aula 2
+// 				- valores (notação) realizar operações atraves deles (valores numerico booleano strings logico invalido:undefined) os valores tem que ser denro da strings
+// 				- tipos
+// 				- variáveis
+// 				- operações sobre valores
+// 				- expressões 
+// 				- atribuição condicional
+// 			*/
+
+// 			var n1 = 122, n2 = 13;
+// 			var soma = n1 + n2;
+// 			console.log(soma);
+
+// 			var nome = "Evelyn";
+// 			var sobrenome = "Mendes";
+// 			console.log(nome + ' ' + sobrenome);
+
+// 			var numero = 1000;
+// 			var resto0 = (numero % 3) == 0 ? "número par" : "número impar";
+// 			console.log(resto0);
+
+// 			var numero2 = 3;
+// 			numeroPrimo = true;
+// 			for (i = 2; i < numero2; i++){
+// 				console.log(i);
+// 				if ((numero2 % i ) == 0){
+// 					numeroPrimo = false;
+// 				break;
+// 				}
+// 			}
+// 			console.log(numeroPrimo);  
+			    //ou pela função
+			// function verSeEImparPar(){
+			// 	var numero3 = 13;
+			// 	numeroPrimoo = true;
+			// 	for (i = 2; i < numero3; i++){
+			// 		if ((numero3 % i ) == 0){
+			// 			numeroPrimoo = false;
+			// 		break;
+			// 		}
+			// 	}
+			// 	return numeroPrimoo ? "este número é primo" : "este número não é primo";
+			// }
+			// console.log(verSeEImparPar());
+
+
+	</script>
+
+</body>
+</html>
+
+ -->
